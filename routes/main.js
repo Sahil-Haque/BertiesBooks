@@ -181,5 +181,14 @@ module.exports = function(app, shopData) {
         + ' price '+ req.body.price);
         });
     }); 
+
+    app.get('/deleteuser', function (req,res) {
+        //selects registered users from database
+        let sqlquery = "SELECT username FROM user_details";
+
+        
+    })
+
+
         
 }
